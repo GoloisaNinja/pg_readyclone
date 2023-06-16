@@ -1,0 +1,60 @@
+.app_header, .app_main, .app_empty {
+  margin: 40px 20px;
+}
+.app_header > h1, .app_main > h1, .app_empty > h1 {
+  font-size: 60px;
+}
+.app_header > button, .app_main > button, .app_empty > button {
+  background: yellow;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.app_header > button:hover, .app_main > button:hover, .app_empty > button:hover {
+  background: #cccc00;
+}
+
+.header_span {
+  padding: 0 10px;
+  background: lime;
+  color: black;
+}
+
+.app_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.player_detail_container {
+  font-family: source-code-pro, "Courier New", monospace;
+  font-weight: bold;
+}
+.player_detail_container > h3 {
+  margin-top: 5px;
+}
+.player_detail_container > table {
+  border-collapse: collapse;
+  border: 1px solid white;
+  text-align: left;
+}
+.player_detail_container > table > thead, .player_detail_container > table th, .player_detail_container > table tr, .player_detail_container > table td {
+  border: 1px solid white;
+  padding: 8px 15px;
+}
+.player_detail_container > table > thead {
+  background: lime;
+  color: black;
+}
+
+.app_empty > h3 {
+  display: inline-flex;
+  background: white;
+  color: black;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=App.module.css.map */

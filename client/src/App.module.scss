@@ -1,0 +1,56 @@
+.app_header, .app_main, .app_empty {
+  margin: 40px 20px;
+  > h1 {
+    font-size: 60px;
+  }
+  > button {
+    background: yellow;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    &:hover {
+      background: darken(yellow, 10%);
+    }
+  }
+}
+.header_span {
+  padding: 0 10px;
+  background: lime;
+  color: black;
+}
+.app_main {
+  display: flex;
+  flex-direction: column;
+}
+.player_detail_container {
+  font-family: source-code-pro, 'Courier New', monospace;
+  font-weight: bold;
+  > h3 {
+    margin-top: 5px;
+  }
+  > table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    text-align: left;
+    > thead, th, tr, td {
+      border: 1px solid white;
+      padding: 8px 15px;
+    }
+    > thead {
+      background: lime;
+      color: black;
+    }
+  }
+}
+.app_empty {
+  > h3 {
+    display: inline-flex;
+    background: white;
+    color: black;
+    padding: 10px;
+  }
+}
