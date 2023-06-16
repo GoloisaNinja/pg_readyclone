@@ -10,8 +10,10 @@ class PlayerRepository {
 
     async getPlayers() {
         try {
-            const players = await this.db.players.findAll();
-            return players;
+            const res = await this.db.players.sequelize.query(
+                'SELECT player_name FROM players'
+            );
+            return res[0];
         } catch(err) {
             console.log(err);
             return [];
