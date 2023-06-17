@@ -11,7 +11,7 @@ class PlayerRepository {
     async getPlayers() {
         try {
             const res = await this.db.players.sequelize.query(
-                'SELECT player_name FROM players'
+                'SELECT player_name, email, created_on FROM players'
             );
             return res[0];
         } catch(err) {
