@@ -7,7 +7,7 @@
     "start": "node server.js",
     "client": "npm start --prefix ./client",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install --prefix ./client && npm run build --prefix ./client"
+    "build": "npm --prefix ../client install && npm --prefix ../client run build"
   },
   "author": "Jon Collins",
   "license": "ISC",
