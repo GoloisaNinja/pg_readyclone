@@ -6,6 +6,7 @@ type Player = {
     class_name: string,
     created_on: string,
     from_region: string,
+    region_type: string,
     id: number,
     last_login: string | null,
     player_name: string,
@@ -18,6 +19,7 @@ function App() {
         class_name: "",
         created_on: "",
         from_region: "",
+        region_type: "",
         id: 0,
         last_login: null,
         player_name: "",
@@ -73,6 +75,10 @@ function App() {
                         <tr>
                             <td>OASIS Region</td>
                             <td>{player.from_region}</td>
+                        </tr>
+                        <tr>
+                            <td>Region Type</td>
+                            <td>{player.region_type}</td>
                         </tr>
                         <tr>
                             <td>Base Hit Points</td>

@@ -23,7 +23,7 @@ class PlayerRepository {
     async getPlayerById(id) {
         try {
             const player = await this.db.players.sequelize.query(
-                'SELECT id, player_name, created_on, last_login, class.name AS class_name, starting_hp, starting_mp, starting_max_inventory, region.name AS from_region ' +
+                'SELECT id, player_name, created_on, last_login, class.name AS class_name, starting_hp, starting_mp, starting_max_inventory, region_type, region.name AS from_region ' +
                 'FROM players ' +
                 'JOIN player_class ON ' +
                 'id = player_id ' +
