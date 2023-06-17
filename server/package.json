@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "client": "npm start --prefix ../client",
+    "client": "npm start --prefix ./client",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install --prefix ../client && npm run build --prefix ../client"
+    "build": "npm install --prefix ./client && npm run build --prefix ./client"
   },
   "author": "Jon Collins",
   "license": "ISC",
